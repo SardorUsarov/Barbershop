@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <style type="text/css">
+    header {
+    margin: 0;
+    background: rgb(117, 102, 102);
+    font-weight: lighter;
+    }
+    .custom{
+      font-family: Courier;
+      color: white;;
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    .container{
+     width: 100%;
+     margin: 0 auto;
+    }
+
+    header{
+    background: #312d29;
+    }
+
+    header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    label.logo{
+      color: rgb(248, 248, 248);
+      font-size: 35px;
+      line-height: 50px;
+      padding: 90px 50;
+      font-weight: bold;
+      float: left;
+      padding-right: 20px;
+    }
+
+    nav{
+      float: right;
+    }
+
+    nav ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+    }
+
+    nav li{
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 40px;
+
+      position: relative;
+    }
+
+    nav a{
+      color: rgb(177, 171, 171);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    nav a:hover{
+      color: #fffbfb;
+    }
+
+    nav a::before{
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: rgb(238, 226, 226);
+
+      position: absolute;
+      top: 0;
+      width: 0%;
+
+      transition: all case-in-out 250ms;
+    }
+
+    nav a:hover::before{
+      width:100%;
+    }
+    body {
+      background-color: rgb(196, 190, 190);
+    }
+    
+  </style>
+  <header class="main-header">
+    <img src="barber1.png"></img>
+    <nav class="main navigation">
+      <a class="main-header-logo" href="index.html">
+      </a>
+      <ul class="site navigation">
+         <li><a href="info.html">Malumotlar</a></li>
+         <li><a href="mews.html">Yangiliklar</a></li>
+         <li><a href="price.html">Narxlar jadvali</a></li>
+         <li class="site-navigation-current"><a href="catalog.html">Magazin</a></li>
+         <li><a href="contacts.html">Kontaktlar</a></li>
+      </ul>
+      <ul class="user navigation">
+        <li class="login-link"></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="page-title">Sayohat to'plami «Baxter of California»</h1>
+    <ul class="breadcrumbs">
+      <li><a href="barbershop.html">Bosh sahifa</a></li>
+      <li><a href="catalog.html">Magazin</a></li>
+      <li class="breadcrumbs-current">Soch parvarishi uchun mahsulotlar</li>
+    </ul>
+    <section class="product-photos">
+      <h2 class="visually-hidden">Mahsulotlar rasmlari:</h2>
+      <p class="product-photo-full">
+      <img src="img/product-big.jpg" width="460" height="498" alt="Jami mahsulotlar rasmlari">
+      </p>
+      <ul class="product-photo-preview">
+      <li><img src="img/product-small-1.jpg" width="140" height="149" alt="Anfasga rasm"></li>
+      <li><img src="img/product-small-2.jpg" width="140" height="149" alt="Profilga rasm"></li>
+      <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Alohida qismlarga rasm"></li>
+      </ul>
+
+    </section>
+    <section class="product-info">
+      <h2 class="visually-hidden">Mahsulot haqida:</h2>
+      <p class="product-availability">Hozirda bizda bor</p>
+      <p class="product-article">Artikul: dexter-ae</p>
+      <p class="product-text">Travel Kit-bu shunaqa maxsulotki,siz uni istagan sayohat davomida ishlata olasiz.Judayam bejirim teri g'ilofda.Qachon soch yoki soqol olish kerak bo'lganda:tozalash uchun to'plam,silliqlovchi krem,soqol olish uchun krem,soqol olgandan keyin ishlatiladigan krem,shampun.To'plamda yana ajoyib sovg'alar ham mavjud.</p>
+      <p class="product-price">
+        <b>129 €</b>
+        <a class="button" href="#">Sotib olish</a>
+      </p>
+      <h3>To'plam ichiga quyidagilar kiradi:</h3>
+      <ul>
+        <li>Tozalash uchun to'plam (50 ml)</li>
+        <li>Silliqlovchi krem (50 ml)</li>
+        <li>Soqol olish kremi (50 ml)</li>
+        <li>Soqol olgandankeyin ishlatiladigan krem,shampun (50 ml)</li>
+        <li>Qulay,teridan ishlangan g'ilof</li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+     <p class="footer-contacts">
+       Barbershop "Ustara"<br>
+       Manzil:Samarqand sh. Bog'ishamol, Gagarin k. 19/8<br>
+       <a href="map.html">Bizni qanday topasiz?</a><br>
+       Tel:+998 90 5561828
+    </p>
+    <div class="footer-social">
+      <b>Bizni ijtimoiy tarmoqlarda kuzatib boring!</b>
+      <ul>
+       <li><a class="social-button" href="#">VKontakte</a></li>
+       <li><a class="social-button" href="#">Facebook</a></li>
+       <li><a class="social-button" href="#">Instagram</a></li>
+     </ul>
+    </div>
+    <p class="footer-copyright">
+      <b>Ishlab chiqilgan:</b>
+      <a class="button" href="https://Sardoracademy.uz">SardorAcademy</a>
+    </p>
+  </footer>
+  <section class="modal modal-login">
+    <h2>Shaxsiy kabinet</h2>
+    <p>Login kodingizni kiriting</p>
+     <!--Buyerda to'ldirish uchun forma-->
+     <span class="modal-close">x</span>
+   </section>
+  </body>
+  </html>

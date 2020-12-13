@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+<body>
+  <style type="text/css">
+    header {
+    margin: 0;
+    background: rgb(117, 102, 102);
+    font-weight: lighter;
+    }
+    .custom{
+      font-family: Courier;
+      color: white;;
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    .container{
+     width: 100%;
+     margin: 0 auto;
+    }
+
+    header{
+    background: #312d29;
+    }
+
+    header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    label.logo{
+      color: rgb(248, 248, 248);
+      font-size: 35px;
+      line-height: 50px;
+      padding: 90px 50;
+      font-weight: bold;
+      float: left;
+      padding-right: 20px;
+    }
+
+    nav{
+      float: right;
+    }
+
+    nav ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+    }
+
+    nav li{
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 40px;
+
+      position: relative;
+    }
+
+    nav a{
+      color: rgb(177, 171, 171);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    nav a:hover{
+      color: #fffbfb;
+    }
+
+    nav a::before{
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: rgb(238, 226, 226);
+
+      position: absolute;
+      top: 0;
+      width: 0%;
+
+      transition: all case-in-out 250ms;
+    }
+
+    nav a:hover::before{
+      width:100%;
+    }
+    body {
+      background-color: rgb(196, 190, 190);
+    }
+    
+  </style>
+  <header class="main-header">
+    <img src="barber1.png"></img>
+    <nav class="main navigation">
+      <a class="main-header-logo">
+      <ul class="site navigation">
+         <li><a href="index.html">Malumotlar</a></li>
+         <li><a href="mews.html">Yangiliklar</a></li>
+         <li><a href="price.html">Narxlar jadvali</a></li>
+         <li><a href="catalog.html">Magazin</a></li>
+         <li><a href="contacts.html">Kontaktlar</a></li>
+      </ul>
+      <ul class="user navigation">
+        <li class="login-link"></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <img src="barbershopb.jpg" width="1333" height="500">
+    <h1 class="visually-hidden">Barbershop "Ustara"</h1>
+    <section class="features">
+      <h2 class="visually-hidden">Boshqalardan farqi</h2>
+      <ul class="features-list">
+        <li class="feature-item">
+          <h3>Tezlik bilan</h3>
+          <p>Biz o'z ishimizni tezlik bilan bajaramiz!Ikki soat o'tganini sezmay qolasiz va siz-baxtli va zamonaviy stildagi soch turmagida bo'lasiz!</p>
+        </li>
+        <li class="feature-item">
+          <h3>Ajoyib</h3>
+          <p>Hamma narsani esdan chiqaring,siz har doimgi stildagi soch turmagidasiz.Biz turmakni futbol yoki kino yulduzlarinikidek qilamiz!Yuqori aniqlikda!</p>
+        </li>
+        <li class="feature-item">
+          <h3>Yuqori narxlar</h3>
+          <p>Bizning ustalar-o'z ishining professionallari va ular o'z mehnatini qadrlaydi.Shuningdek,narx bu sifat kafolati</p>
+        </li>
+      </ul>
+    </section>
+    <section class="news">
+      <h2>Yangiliklar</h2>
+      <ul class="news-list">
+       <li class="news-item">
+         <p>Bizda vanihoyat Yagermaster ichimligi!Endi siz soch olayotgan vaqti bir stakan icha olasiz</p>
+         <time datetime="2020-01-23">23-yanvar</time>
+       </li>
+       <li class="news-item">
+         <p>Bizning jamoa tiklandi,Amal "Britva" Abdullayev,bizning safga qo'shildi</p>
+         <time datetime="2020-02-11">11-fevral</time>
+       </li>
+      </ul>
+      <a class="button" href="news.html">Boshqa yangiliklar</a>
+    </section>
+    <section class="gallery">
+      <h2>Fotogaleriya</h2>
+      <figure class="gallery-content">
+        <a href="#"><img src="interier.jpg" width="400"  height="200" alt="Interyer"></a>
+      </figure>
+      <span class="button gallery-button gallery-button-back">Orqaga</span><br>
+      <span class="button gallery-button gallery-button-next">Oldinga</span>
+    </section>
+    <section class="contacts">
+    <h2>Bog'lanish</h2>
+    <p>
+      Barbershop "Ustara"<br>
+      Manzil:Samarqand sh. Bog'ishamol, Gagarin k. 19/8<br>
+      Tel:+998 90 5561828
+    </p>
+    <p>
+      Ish vaqti:<br>
+      Du-Ju:  9:00 dan 22:00<br>
+      Sh-Ya: 10:00 dan 19:00
+    </p>
+    <a class="button" href="map.html">Qanday boriladi</a><br>
+    <a class="button" href="contacts.html">Biz bilan Bog'lanish</a>
+    </section>
+    <section class="appoinment">
+      <h2>Yozilish</h2>
+      <p class="appoinment-info">Bizga kelish vaqtingizni yozib qoldiring biz siz uchun navbat olishimiz uchun</p>
+      <!--Buyerda to'ldirish uchun forma-->
+    </section>
+      </figure>
+    </section>
+  </main>
+  <footer class="main-footer">
+     <p class="footer-contacts">
+       Barbershop "Ustara"<br>
+       Manzil:Samarqand sh. Bog'ishamol, Gagarin k. 19/8<br>
+       <a href="map.html">Bizni qanday topasiz?</a><br>
+       Tel:+998 90 5561828
+    </p>
+    <div class="footer-social">
+      <b>Bizni ijtimoiy tarmoqlarda kuzatib boring!</b>
+      <ul>
+       <li><a class="social-button" href="#">VKontakte</a></li>
+       <li><a class="social-button" href="#">Facebook</a></li>
+       <li><a class="social-button" href="#">Instagram</a></li>
+     </ul>
+    </div>
+    <p class="footer-copyright">
+      <b>Ishlab chiqilgan:</b>
+      <a class="button" href="https://Sardoracademy.uz">SardorAcademy</a>
+    </p>
+  </footer>
+  <section class="modal modal-login">
+    <h2>Shaxsiy kabinet</h2>
+    <p>O'zingizni login kodingizni yozing.</p>
+    <!--Buyerda to'ldirish uchun forma-->
+    <span class="modal-close">x</span>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Qanday bizga yetvolish mumkin</h2>
+    <span class="modal-class">x</span>
+  </section>
+  </body>
+</html>

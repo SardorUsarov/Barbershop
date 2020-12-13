@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <style type="text/css">
+    header {
+    margin: 0;
+    background: rgb(117, 102, 102);
+    font-weight: lighter;
+    }
+    .custom{
+      font-family: Courier;
+      color: white;;
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    .container{
+     width: 100%;
+     margin: 0 auto;
+    }
+
+    header{
+    background: #312d29;
+    }
+
+    header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    label.logo{
+      color: rgb(248, 248, 248);
+      font-size: 35px;
+      line-height: 50px;
+      padding: 90px 50;
+      font-weight: bold;
+      float: left;
+      padding-right: 20px;
+    }
+
+    nav{
+      float: right;
+    }
+
+    nav ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+    }
+
+    nav li{
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 40px;
+
+      position: relative;
+    }
+
+    nav a{
+      color: rgb(177, 171, 171);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    nav a:hover{
+      color: #fffbfb;
+    }
+
+    nav a::before{
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: rgb(238, 226, 226);
+
+      position: absolute;
+      top: 0;
+      width: 0%;
+
+      transition: all case-in-out 250ms;
+    }
+
+    nav a:hover::before{
+      width:100%;
+    }
+    body {
+      background-color: rgb(196, 190, 190);
+    }
+    
+  </style>
+  <header class="main-header">
+    <img src="barber1.png"></img>
+    <nav class="main navigation">
+      <a class="main-header-logo">
+      </a>
+      <ul class="site navigation">
+         <li><a href="info.html">Malumotlar</a></li>
+         <li><a href="mews.html">Yangiliklar</a></li>
+         <li><a href="price.html">Narxlar jadvali</a></li>
+         <li class="site-navigation-current"><a href="catalog.html">Magazin</a></li>
+         <li><a href="contacts.html">Kontaktlar</a></li>
+      </ul>
+      <ul class="user navigation">
+        <li class="login-link"></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="page-title">Soch parvarishi</h1>
+    <ul class="breadcrumbs">
+      <li><a href="barbershop.html">Bosh sahifa</a></li>
+      <li><a href="catalog.html">Magazin</a></li>
+      <li class="breadcrumbs-current">Soch parvarishi</li>
+     </ul>
+     <section class="filters">
+       <h2 class="visually-hidden">Mahsulotlar filtri</h2>
+       <!--Buyerda to'ldirish uchun forma-->
+     </section>
+     <section class="catalog">
+       <h2 class="visually-hidden">Soch parvarishi uchun mahsulotlar</h2>
+       <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Sayohat to'plami</span>
+                <span class="catalog-item-title">«Baxter of California»</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+             <a href="catalog-item.html">
+              <img src="img/product-1.jpg" width="220" height="165" alt="Sayohat to'plami «Baxter California»">
+              </a>
+
+            </p>
+            <p class="catalog-item-price">
+            <b> 18 €</b>
+            <a class="button" href="#">Sotib olish</a>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Namlantiruvchi konditsioner</span>
+                <span class="catalog-item-title">«Baxter of California»</span>
+             </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-2.jpg" width="220" height="165" alt="Namlantiruvchi konditsioner «Baxter of California»">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>11 €</b>
+              <a class="button" href="#">Sotib olish</a>
+            </p>
+         </li>
+         <li class="catalog-item">
+           <h3>
+             <a href="catalog-item.html">
+               <span class="catalog-category">Soch uchun gel</span>
+               <span class="catalog-item-title">«Suavecito»</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-3.jpg" width="220" height="165" alt="Soch uchun gel «Suavecito»">
+                </a>
+                </p>
+                <p class="catalog-item-price">
+                  <b>9 €</b>
+                  <a class="button" href="#">Sotib olish</a>
+                </p>
+                </li>
+                <li class="catalog-item">
+                  <h3>
+                    <a href="catalog-item.html">
+                      <span class="catalog-category">Soch turmaklash uchun vosita</span>
+                      <span class="catalog-item-title">«American crew»</span>
+                    </a>
+                    </h3>
+                    <p class="catalog-item-image">
+                      <a href="catalog-item.html">
+                        <img src="img/product-4.jpg" width="220" height="165" alt="Soch turmaklash uchun vosita «American crew»">
+                        </a>
+                        </p>
+                        <p class="catalog-item-price">
+                          <b>17 €</b>
+                         <a class="button" href="#">Sotib olish</a>
+                        </p>
+                  </li>
+                  <li class="catalog-item">
+                    <h3>
+                      <a href="catalog-item.html">
+                        <span class="catalog-category">Soch uchun gel</span>
+                        <span class="catalog-item-title">«American crew»</span>
+                      </a>
+                    </h3>
+               <p class="catalog-item-image">
+                 <a href="catalog-item.html">
+                   <img src="img/product-5.jpg" width="220" height="165" alt="Soch uchun gel «American crew»">
+                </a>
+              </p>
+              <p class="catalog-item-price">
+                <b>13 €</b>
+                <a class="button" href="#">Sotib olish</a>
+              </p>
+            </li>
+            <li calss="catalog-item">
+              <h3>
+                <a href=catalog-item.html>
+                  <span class="catalog-category">Soqol olish to'plami</span>
+                  <span class="catalog-item-title">«Baxter of California»</span>
+              </a>
+              </h3>
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/product-6.jpg" width="220" height="165" alt="Soqol olish to'plami «Baxter of California»">
+                </a>
+              </p>
+              <p class="catalog-item-price">
+                <b>21 €</b>
+                <a class="button" href="#">Sotib olish</a>
+              </p>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item"><a href="#">1</a></li>
+            <li class="pagination-item pagination-item-current"><a>2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">4</a></li>
+          </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+       <p class="footer-contacts">
+         Barbershop "Ustara"<br>
+         Manzil:Samarqand sh. Bog'ishamol, Gagarin k. 19/8<br>
+         <a href="map.html">Bizni qanday topasiz?</a><br>
+         Tel:+998 90 5561828
+      </p>
+      <div class="footer-social">
+        <b>Bizni ijtimoiy tarmoqlarda kuzatib boring!</b>
+        <ul>
+         <li><a class="social-button" href="#">VKontakte</a></li>
+         <li><a class="social-button" href="#">Facebook</a></li>
+         <li><a class="social-button" href="#">Instagram</a></li>
+       </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Ishlab chiqilgan:</b>
+        <a class="button" href="https://Sardoracademy.uz">SardorAcademy</a>
+      </p>
+    </footer>
+    <section class="modal modal-login">
+      <h2>Shaxsiy kabinet</h2>
+      <p>Login kodingizni kiriting</p>
+       <!--Buyerda to'ldirish uchun forma-->
+       <span class="modal-close">x</span>
+    </section>
+  </body>
+  </html>
